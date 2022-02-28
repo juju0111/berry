@@ -1,0 +1,24 @@
+    """
+    if (argc == 3)
+    {
+        //ROS_INFO("cmd : rosrun ros_tutorials_service service_client arg0 arg1");
+        //ROS_INFO("arg0 : Id1, arg1: Id2");
+        berry_pkg::SyncGetPosition srv;
+
+        srv.request.id1  = atoll(argv[1]);
+        srv.request.id2  = atoll(argv[2]);
+
+        if (berry_enc_service_client.call(srv))
+        {
+            ROS_INFO("send srv, srv.Request.id1 and id2: %d, %d", srv.request.id1, srv.request.id2);
+            ROS_INFO("receive srv, srv.Request.result : %d, %d",srv.response.position1,srv.response.position2);
+        }   
+        else{
+            ROS_ERROR("Failed to call service ros_tutorial_srv");
+            return 1;
+        }
+        return 1;
+    }
+    else
+    {
+    """

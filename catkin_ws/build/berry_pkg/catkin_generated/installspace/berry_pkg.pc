@@ -1,0 +1,8 @@
+prefix=/home/park/berry_project/catkin_ws/install
+
+Name: berry_pkg
+Description: Description of berry_pkg
+Version: 3.7.51
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs dynamixel_sdk
