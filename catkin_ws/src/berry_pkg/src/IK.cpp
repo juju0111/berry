@@ -72,6 +72,7 @@ void IK::msgCallback(const berry_pkg::BerryPos::ConstPtr& msg)
 
 float IK::cal_best_position(float th1[],float th2[],float th3[], float th4[], float &p){
     // th 중에 어느게 가까운 th인지 핀별해야 해 
+    // I have to update ths 
     return 0;
 }
 
