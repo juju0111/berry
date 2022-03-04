@@ -91,8 +91,6 @@ void IK::msgCallback(const berry_pkg::BerryPos::ConstPtr& msg)
     // ROS_INFO("best_ths 3 = %f", best_ths[2]);
     // ROS_INFO("best_ths 4 = %f", best_ths[3]);
 
-    
-    
     int *enc_ = IK::get_enc_from_ths(best_ths, enc);
 
     // ROS_INFO("enc 1 = %d", enc_[1]);
@@ -114,14 +112,11 @@ void IK::msgCallback(const berry_pkg::BerryPos::ConstPtr& msg)
 
     pub1.publish(output1);
     pub2.publish(output2);
-
-    ///////////    어떤 역기구학 값을 받아아서 선택해줘야할지    
-    ///이전 th랑 역기구학 목적지 th들이랑 오차 작은 거로 선택하는 걸로 하자
-
-    //last_th assign
-}
+ }
 
 float *IK::get_best_position(float th_b[],float last_ths[]){
+    ///이전 th랑 역기구학 목적지 th들이랑 오차 작은 거로 선택하는 걸로 하자
+
     // th 중에 어느게 가까운 th인지 핀별해야 해 
     // git branch update test
     float error[2]={0}; 
