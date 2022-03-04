@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="berry_pkg" type="sync_read_write_node" name="sync_read_write_node"/>
+    <!--node pkg="berry_pkg" type="teleop_pos_node.py" name="teleop_pos_node" output="screen"/-->
+</launch>
