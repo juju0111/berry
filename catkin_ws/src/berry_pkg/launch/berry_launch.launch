@@ -1,8 +1,9 @@
 <launch>
-    <node pkg="berry_pkg" type="sync_read_write_node" name="sync_read_write_node"/>
+    <include file="$(find berry_pkg)/launch/sync_launch.launch">
+    </include>
     <node pkg="berry_pkg" type="get_enc" name="get_enc"/>
     <node pkg="berry_pkg" type="get_kinematics.py" name="get_kinematics"/>
     <!--node pkg="berry_pkg" type="teleop_pos_node.py" name="teleop_pos_node" output="screen"/-->
-
+    
 
 </launch>

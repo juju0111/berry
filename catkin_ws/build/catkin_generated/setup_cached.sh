@@ -7,6 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH="/home/park/berry_project/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PATH='/opt/ros/melodic/bin:/home/park/anaconda3/condabin:/home/park/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PWD='/home/park/berry_project/catkin_ws/build'
-export PYTHONPATH="/home/park/berry_project/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
